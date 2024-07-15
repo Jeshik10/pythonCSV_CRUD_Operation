@@ -1,14 +1,16 @@
-#Develop a software application for a bank that includes functionalities to add and view customer information. Each customer should have an ID, name, phone number, and balance.
-
 class Customer:
-  def __init__(self, id, name, phone, balance):
-    self.id = id
-    self.name = name
-    self.phone = phone
-    self.balance = balance
-    
-  def display_customer(self):
-    print(f"Customer id is {self.id}")  
-    print(f"Customer name is {self.name}")  
-    print(f"Customer phone is {self.phone}")  
-    print(f"Customer balance is {self.balance}")  
+    def __init__(self, id, name, phone, balance):
+        self.id = id
+        self.name = name
+        self.phone = phone
+        self.balance = float(balance)
+
+    def __str__(self):
+        return f"Customer(id={self.id}, name={self.name}, phone={self.phone}, balance=Rs.{self.balance})"
+
+    def display(self):
+        print(f"Customer ID: {self.id}")
+        print(f"Name: {self.name}")
+        print(f"Phone: {self.phone}")
+        print(f"Balance: Rs.{self.balance:.2f}")
+        print()

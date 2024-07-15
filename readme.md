@@ -7,3 +7,5 @@ This customer management system helps us to:
 3. View Single Customer By ID.
 4. Update Customer.
 5. Delete Customer.
+
+- Feel free to use and modify this code.
